@@ -1,0 +1,28 @@
+{
+  "appEnvs": {
+    "beta": {
+      "serviceDomain": "csi-beta.ggcpublishing.com",
+      "topicName": "LeadUpdateEvent",
+      "queueName": "CSILeadEventQueue",
+      "queueDurationMinutes": 30,
+      "encryptionKey": "/lead-event-queue/key_arn",
+      "entities": {
+        "JM": {},
+        "RH": {},
+        "JD": {}
+      }
+    },
+    "prod": {
+      "serviceDomain": "csi.ggcpublishing.com",
+      "topicName": "LeadUpdateEvent",
+      "queueName": "CSILeadEventQueue",
+      "queueDurationMinutes": 30,
+      "encryptionKey": "/lead-event-queue/key_arn",
+      "entities": {
+        "JM": {},
+        "RH": {},
+        "JD": {}
+      }
+    }
+  }
+}

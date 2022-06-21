@@ -7,9 +7,24 @@
       "queueDurationMinutes": 30,
       "encryptionKey": "/lead-event-queue/key_arn",
       "entities": {
-        "JM": {},
-        "RH": {},
-        "JD": {}
+        "JM": {
+          "apiUrl": "https://m3-beta.mauldineconomics.com",
+          "username": "/mu3x/beta/jm/API_USERNAME",
+          "password": "/mu3x/beta/jm/API_PASSWORD",
+          "throttle": "/lead-events/beta/jm/QUEUE_THROTTLE"
+        },
+        "RH": {
+          "apiUrl": "https://m3-beta.riskhedge.com",
+          "username": "/mu3x/beta/rh/API_USERNAME",
+          "password": "/mu3x/beta/rh/API_PASSWORD",
+          "throttle": "/lead-events/beta/rh/QUEUE_THROTTLE"
+        },
+        "JD": {
+          "apiUrl": "https://m3-beta.jareddillianmoney.com",
+          "username": "/mu3x/beta/jdm/API_USERNAME",
+          "password": "/mu3x/beta/jdm/API_PASSWORD",
+          "throttle": "/lead-events/beta/jdm/QUEUE_THROTTLE"
+        }
       }
     },
     "prod": {
@@ -19,9 +34,24 @@
       "queueDurationMinutes": 30,
       "encryptionKey": "/lead-event-queue/key_arn",
       "entities": {
-        "JM": {},
-        "RH": {},
-        "JD": {}
+        "JM": {
+          "apiUrl": "https://m.mauldineconomics.com",
+          "username": "/mu3x/prod/jm/API_USERNAME",
+          "password": "/mu3x/prod/jm/API_PASSWORD",
+          "throttle": "/lead-events/prod/jm/QUEUE_THROTTLE"
+        },
+        "RH": {
+          "apiUrl": "https://m.riskhedge.com",
+          "username": "/mu3x/prod/rh/API_USERNAME",
+          "password": "/mu3x/prod/rh/API_PASSWORD",
+          "throttle": "/lead-events/prod/rh/QUEUE_THROTTLE"
+        },
+        "JD": {
+          "apiUrl": "https://m.jareddillianmoney.com",
+          "username": "/mu3x/prod/jdm/API_USERNAME",
+          "password": "/mu3x/prod/jdm/API_PASSWORD",
+          "throttle": "/lead-events/prod/jdm/QUEUE_THROTTLE"
+        }
       }
     }
   }

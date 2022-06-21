@@ -8,9 +8,10 @@ export interface GGCEntity {
 }
 
 export class EntityProps {
-  public domainName: string;
-  public SSLCertArn: string;
-  public region: string;
+  public apiUrl: string;
+  public username: string;
+  public password: string;
+  public throttle: string;
 }
 
 export class EnvContext {
